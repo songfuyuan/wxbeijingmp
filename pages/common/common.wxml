@@ -1,0 +1,16 @@
+<template name="common" data="movies">
+  <scroll-view class="page-body" scroll-y="true">
+      <navigator url="../detail/detail?id={{item.articleId}}" wx:for="{{details}}">
+          <view class="item">
+              <image class="poster" src="{{item.imagepath}}"></image>
+              <view class="meta">
+                  <text class="title">{{item.title}}</text>
+                  <text class="sub-title">{{item.content}}</text>
+                  <text></text>
+              </view>
+              <view class="rating">
+              </view>
+          </view>
+      </navigator>
+  </scroll-view>
+</template>

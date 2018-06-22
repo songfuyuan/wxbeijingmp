@@ -1,0 +1,12 @@
+<!--pages/detail/detail.wxml-->
+<!-- 详情页面  -->
+<scroll-view scroll-y="true">
+  <view class="meta">
+    <image class="poster" src="{{detail.imagepath}}"></image>
+    <text class="title">{{detail.title}}</text>
+    <text class="info">({{detail.dateandtime}})</text>
+  </view>
+  <view class="summary">
+    <text class="content">{{detail.content}}</text>
+  </view>
+</scroll-view>
